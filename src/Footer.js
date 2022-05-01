@@ -8,20 +8,16 @@ const Footer = () => {
     <footer>
       {" "}
       <div class="socialMedias mt-3 mb-3">
-        <a href="" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.bscscan.com/" target="_blank">
           <img src={one} style={{ width: "30px", marginLeft: "15px" }} />
         </a>{" "}
-        <a href="" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.bscscan.com/" target="_blank">
           <img src={two} style={{ width: "30px", marginLeft: "15px" }} />
         </a>
-        <a href="" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.bscscan.com/" target="_blank">
           <img src={three} style={{ width: "30px", marginLeft: "15px" }} />
         </a>
-        <a
-          href="https://t.me/bakedpizzagroup"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://www.bscscan.com/" target="_blank">
           <img src={four} style={{ width: "30px", marginLeft: "15px" }} />
         </a>
       </div>

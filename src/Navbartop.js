@@ -10,6 +10,7 @@ import two from "./Images/2.png";
 import three from "./Images/3.png";
 import four from "./Images/4.png";
 import meta from "./Images/metamask.png";
+import con from "./Images/conn.png";
 const Navbartop = () => {
   let web3 = new Web3(window?.web3?.currentProvider);
   if (window.ethereum) {
@@ -24,11 +25,6 @@ const Navbartop = () => {
     useWeb3React();
   async function connect() {
     try {
-      if (!window?.web3?.currentProvider) {
-        alert(`Metamask is not installed.
-          Try Different browser or Install Metamask.`);
-        return;
-      }
       await activate(injected);
 
       //   if (id !== parseInt(chainId)) {
@@ -70,29 +66,25 @@ const Navbartop = () => {
           <Nav>
             <Nav.Link>
               <div class="socialMedias bgnav">
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.bscscan.com/" target="_blank">
                   <img
                     src={one}
                     style={{ width: "25px", marginLeft: "15px" }}
                   />
                 </a>{" "}
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.bscscan.com/" target="_blank">
                   <img
                     src={two}
                     style={{ width: "25px", marginLeft: "15px" }}
                   />
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.bscscan.com/" target="_blank">
                   <img
                     src={three}
                     style={{ width: "25px", marginLeft: "15px" }}
                   />
                 </a>
-                <a
-                  href="https://t.me/bakedpizzagroup"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.bscscan.com/" target="_blank">
                   <img
                     src={four}
                     style={{ width: "25px", marginLeft: "15px" }}
@@ -134,9 +126,16 @@ const Navbartop = () => {
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
-                    <div class="modal-body mb-3" onClick={connect}>
+                    <div class="modal-body mb-3">
                       {" "}
-                      <img src={meta} style={{ width: "100%" }} />
+                      <img
+                        src={meta}
+                        style={{ width: "100%" }}
+                        onClick={connect}
+                      />
+                      <hr style={{ height: "3px" }} />
+                      <br />
+                      <img src={con} style={{ width: "100%" }} />
                       {/* {!isMobile ? (
                         window.ethereum ? (
                           !active ? (

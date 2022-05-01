@@ -22,11 +22,6 @@ const MintCard = () => {
     useWeb3React();
   async function connect() {
     try {
-      if (!window?.web3?.currentProvider) {
-        alert(`Metamask is not installed.
-          Try Different browser or Install Metamask.`);
-        return;
-      }
       await activate(injected);
 
       //   if (id !== parseInt(chainId)) {
@@ -59,7 +54,9 @@ const MintCard = () => {
           maxWidth: "800px",
         }}
       >
-        <img src={logo} className="logoimg"></img>
+        <a href="#" target="_blank">
+          <img src={logo} className="logoimg"></img>
+        </a>
         <h2 className="firstheading">
           The <span style={{ color: "#FFB100" }}>BNB</span> Rewards pool with
           the Juicy Daily Returns and Referral rewards.
@@ -90,7 +87,7 @@ const MintCard = () => {
                   <div class="value">0 Steak</div>
                 </div>
                 <span class="ant-input-affix-wrapper antInput">
-                  <input type="text" value="0" class="ant-input" />{" "}
+                  <input type="text" placeholder="0" class="ant-input" />{" "}
                   <span class="ant-input-suffix">
                     <span class="suffix">BNB</span>
                   </span>
@@ -123,18 +120,30 @@ const MintCard = () => {
               className="margin1 bgcolor"
             >
               <div className="rightdiv ">
-                <h3 className="righttext">HOW TO GET STARTED</h3>
-                <h3 className="righttext mt-3">WHITEPAPER</h3>
-                <h3 className="righttext mt-3">PROFIT CALCULATOR</h3>
-                <button
-                  type="submit"
-                  className="righttext mt-2 buttoncreator"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
-                >
-                  CREATOR CONTEST
-                </button>
-                <h3 className="righttext mt-3">AUDIT REPORT</h3>
+                <a href="https://www.bscscan.com/" target="_blank">
+                  {" "}
+                  <h3 className="righttext">HOW TO GET STARTED</h3>
+                </a>
+                <a href="https://www.bscscan.com/" target="_blank">
+                  {" "}
+                  <h3 className="righttext mt-3">WHITEPAPER</h3>
+                </a>
+
+                <a href="https://www.bscscan.com/" target="_blank">
+                  {" "}
+                  <button
+                    type="submit"
+                    className="righttext mt-2 buttoncreator"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                  >
+                    CREATOR CONTEST
+                  </button>
+                </a>
+                <a href="https://www.bscscan.com/" target="_blank">
+                  {" "}
+                  <h3 className="righttext mt-3">AUDIT REPORT</h3>
+                </a>
 
                 <div
                   class="modal fade"

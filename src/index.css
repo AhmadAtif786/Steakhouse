@@ -203,6 +203,15 @@ code {
   background: transparent;
   color: #fff;
 }
+.copyButton:hover {
+  cursor: pointer;
+}
+input::placeholder {
+  color: black;
+}
+a {
+  text-decoration: none !important;
+}
 input:focus {
   outline: none !important;
 }
