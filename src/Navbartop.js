@@ -141,52 +141,27 @@ const Navbartop = () => {
                       />
                       <hr style={{ height: "3px" }} />
                       <br />
-                      <img src={con} style={{ width: "100%" }} />
-                      {/* {!isMobile ? (
+                      {!isMobile ? (
                         window.ethereum ? (
                           !active ? (
-                            <button
-                              variant=""
-                              className="solbutton mx-auto enableEthereumButton"
-                              onClick={connect}
-                            >
-                              Connect Wallet
-                            </button>
+                            <img src={con} style={{ width: "100%" }} />
                           ) : (
-                            <button variant="" className="solbutton mx-auto">
-                              Connected
-                            </button>
+                            <img src={con} style={{ width: "100%" }} />
                           )
                         ) : (
-                          <button variant="" className="solbutton mx-auto">
-                            Please Install metamask
-                          </button>
+                          <img src={con} style={{ width: "100%" }} />
                         )
                       ) : window.ethereum ? (
                         !active ? (
-                          <button
-                            variant=""
-                            className="solbutton mx-auto enableEthereumButton"
-                            onClick={connect}
-                          >
-                            Connect Wallet
-                          </button>
+                          <img src={con} style={{ width: "100%" }} />
                         ) : (
-                          <button variant="" className="solbutton mx-auto">
-                            Connected
-                          </button>
+                          <img src={con} style={{ width: "100%" }} />
                         )
                       ) : (
                         <a className="solbutton" href="">
-                          <button
-                            variant=""
-                            className="solbutton mx-auto enableEthereumButton"
-                            onClick={connect}
-                          >
-                            Connect Wallet
-                          </button>
+                          <img src={con} style={{ width: "100%" }} />
                         </a>
-                      )} */}
+                      )}
                     </div>
                   </div>
                 </div>
