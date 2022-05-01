@@ -127,24 +127,19 @@ const MintCard = () => {
                 <a href="https://www.bscscan.com/" target="_blank">
                   {" "}
                   <h3 className="righttext mt-3">WHITEPAPER</h3>
-                </a>
-
-                <a href="https://www.bscscan.com/" target="_blank">
-                  {" "}
-                  <button
-                    type="submit"
-                    className="righttext mt-2 buttoncreator"
-                    data-toggle="modal"
-                    data-target="#exampleModal"
-                  >
-                    CREATOR CONTEST
-                  </button>
-                </a>
+                </a>{" "}
+                <button
+                  type="submit"
+                  className="righttext mt-2 buttoncreator"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  CREATOR CONTEST
+                </button>
                 <a href="https://www.bscscan.com/" target="_blank">
                   {" "}
                   <h3 className="righttext mt-3">AUDIT REPORT</h3>
                 </a>
-
                 <div
                   class="modal fade"
                   id="exampleModal"

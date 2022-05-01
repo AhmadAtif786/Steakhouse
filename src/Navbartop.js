@@ -64,7 +64,13 @@ const Navbartop = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link>
+            <div
+              style={{
+                paddingRight: "0.5rem",
+                paddingLeft: "0.5rem",
+                marginTop: "10px",
+              }}
+            >
               <div class="socialMedias bgnav">
                 <a href="https://www.bscscan.com/" target="_blank">
                   <img
@@ -91,7 +97,7 @@ const Navbartop = () => {
                   />
                 </a>
               </div>
-            </Nav.Link>
+            </div>
             <Nav.Link>
               <button
                 type="button"
