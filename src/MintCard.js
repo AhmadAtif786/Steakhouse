@@ -40,6 +40,12 @@ const MintCard = () => {
       return "failed";
     }
   }
+
+  useEffect(() => {
+    if (isMobile && !active && window.ethereum) {
+      connect();
+    }
+  }, [window.ethereum]);
   // const showAccount = document.querySelector('.showAccount');
   function register() {
     // Register functionality here
