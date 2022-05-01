@@ -203,6 +203,9 @@ code {
   background: transparent;
   color: #fff;
 }
+input:focus {
+  outline: none !important;
+}
 .copyButton:hover {
   border: 2px solid #fff;
 }
