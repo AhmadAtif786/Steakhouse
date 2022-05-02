@@ -136,27 +136,11 @@ const Navbartop = () => {
                     </div>
                     <div class="modal-body mb-3">
                       {" "}
-                      {!isMobile ? (
-                        window.ethereum ? (
-                          !active ? (
-                            <img src={meta} style={{ width: "100%" }} />
-                          ) : (
-                            <img src={meta} style={{ width: "100%" }} />
-                          )
-                        ) : (
-                          <img src={meta} style={{ width: "100%" }} />
-                        )
-                      ) : window.ethereum ? (
-                        !active ? (
-                          <img src={meta} style={{ width: "100%" }} />
-                        ) : (
-                          <img src={meta} style={{ width: "100%" }} />
-                        )
-                      ) : (
-                        <a className="solbutton" href="">
-                          <img src={con} style={{ width: "100%" }} />
-                        </a>
-                      )}
+                      <img
+                        src={meta}
+                        onClick={connect}
+                        style={{ width: "100%" }}
+                      />
                       <hr />
                       <img src={con} style={{ width: "100%" }} />
                     </div>
