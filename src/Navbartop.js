@@ -75,25 +75,25 @@ const Navbartop = () => {
                 <a href="https://www.bscscan.com/" target="_blank">
                   <img
                     src={one}
-                    style={{ width: "25px", marginLeft: "15px" }}
+                    style={{ width: "25px", marginLeft: "20px" }}
                   />
                 </a>{" "}
                 <a href="https://www.bscscan.com/" target="_blank">
                   <img
                     src={two}
-                    style={{ width: "25px", marginLeft: "15px" }}
+                    style={{ width: "25px", marginLeft: "20px" }}
                   />
                 </a>
                 <a href="https://www.bscscan.com/" target="_blank">
                   <img
                     src={three}
-                    style={{ width: "25px", marginLeft: "15px" }}
+                    style={{ width: "25px", marginLeft: "20px" }}
                   />
                 </a>
                 <a href="https://www.bscscan.com/" target="_blank">
                   <img
                     src={four}
-                    style={{ width: "25px", marginLeft: "15px" }}
+                    style={{ width: "25px", marginLeft: "20px" }}
                   />
                 </a>
               </div>
@@ -117,7 +117,7 @@ const Navbartop = () => {
                 role="dialog"
                 aria-labelledby="exampleModalLabel"
                 aria-hidden="true"
-                style={{ top: "150px" }}
+                style={{ top: "200px" }}
               >
                 <div class="modal-dialog" role="document">
                   <div

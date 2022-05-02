@@ -9,16 +9,16 @@ const Footer = () => {
       {" "}
       <div class="socialMedias mt-3 mb-3">
         <a href="https://www.bscscan.com/" target="_blank">
-          <img src={one} style={{ width: "30px", marginLeft: "15px" }} />
+          <img src={one} style={{ width: "30px", marginLeft: "20px" }} />
         </a>{" "}
         <a href="https://www.bscscan.com/" target="_blank">
-          <img src={two} style={{ width: "30px", marginLeft: "15px" }} />
+          <img src={two} style={{ width: "30px", marginLeft: "20px" }} />
         </a>
         <a href="https://www.bscscan.com/" target="_blank">
-          <img src={three} style={{ width: "30px", marginLeft: "15px" }} />
+          <img src={three} style={{ width: "30px", marginLeft: "20px" }} />
         </a>
         <a href="https://www.bscscan.com/" target="_blank">
-          <img src={four} style={{ width: "30px", marginLeft: "15px" }} />
+          <img src={four} style={{ width: "30px", marginLeft: "20px" }} />
         </a>
       </div>
     </footer>
