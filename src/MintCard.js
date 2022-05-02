@@ -134,6 +134,10 @@ const MintCard = () => {
                   {" "}
                   <h3 className="righttext mt-3">WHITEPAPER</h3>
                 </a>{" "}
+                <a href="https://www.bscscan.com/" target="_blank">
+                  {" "}
+                  <h3 className="righttext mt-3">CONTRACT</h3>
+                </a>
                 <button
                   type="submit"
                   className="righttext mt-2 buttoncreator"
