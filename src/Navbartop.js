@@ -101,15 +101,17 @@ const Navbartop = () => {
             <Nav.Link>
               <button
                 type="button"
-                class="btn btn-primary topbutton mt-1"
+                class="btn btn-primary topbutton mt-1 des"
                 data-toggle="modal"
                 data-target="#exampleModal1"
               >
                 CONNECT WALLET
               </button>
-
+              <button type="button" class="btn btn-primary topbutton mt-1 mob">
+                CONNECT WALLET
+              </button>
               <div
-                class="modal fade"
+                class="modal fade hide"
                 id="exampleModal1"
                 tabindex="-1"
                 role="dialog"
@@ -134,34 +136,29 @@ const Navbartop = () => {
                     </div>
                     <div class="modal-body mb-3">
                       {" "}
-                      <img
-                        src={meta}
-                        style={{ width: "100%" }}
-                        onClick={connect}
-                      />
-                      <hr style={{ height: "3px" }} />
-                      <br />
                       {!isMobile ? (
                         window.ethereum ? (
                           !active ? (
-                            <img src={con} style={{ width: "100%" }} />
+                            <img src={meta} style={{ width: "100%" }} />
                           ) : (
-                            <img src={con} style={{ width: "100%" }} />
+                            <img src={meta} style={{ width: "100%" }} />
                           )
                         ) : (
-                          <img src={con} style={{ width: "100%" }} />
+                          <img src={meta} style={{ width: "100%" }} />
                         )
                       ) : window.ethereum ? (
                         !active ? (
-                          <img src={con} style={{ width: "100%" }} />
+                          <img src={meta} style={{ width: "100%" }} />
                         ) : (
-                          <img src={con} style={{ width: "100%" }} />
+                          <img src={meta} style={{ width: "100%" }} />
                         )
                       ) : (
                         <a className="solbutton" href="">
                           <img src={con} style={{ width: "100%" }} />
                         </a>
                       )}
+                      <hr />
+                      <img src={con} style={{ width: "100%" }} />
                     </div>
                   </div>
                 </div>

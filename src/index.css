@@ -85,7 +85,7 @@ code {
   background: transparent;
   font-size: 16px;
   font-weight: 600;
-  line-height: 55px;
+
   text-align: center;
   padding-left: 25px;
   width: 100%;
@@ -288,6 +288,12 @@ input {
   font-weight: bold !important;
   font-family: Roboto !important;
 }
+.mob {
+  display: none !important;
+}
+.des {
+  display: block !important;
+}
 @media (min-width: 576px) {
   .modal-content {
     background-color: #fff4f4;
@@ -295,8 +301,17 @@ input {
   }
 }
 @media only screen and (max-width: 700px) {
+  .mob {
+    display: block !important;
+  }
+  .des {
+    display: none !important;
+  }
   #ma {
     display: none;
+  }
+  .hide {
+    display: none !important;
   }
   .margin1 {
     margin-top: 2rem !important;
